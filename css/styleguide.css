@@ -1,7 +1,7 @@
 
 body {
     margin: 0%;
-    background-color: #d4d63b;
+    background-color: #310574;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,19 +25,19 @@ ul {
 li {
     display: inline-block;
     height: 100%;
-    padding: 10px;
-    
+    padding: 10px;  
 }
 .navlink{
     font-weight: bolder;
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 h1{
     font-size: 64px;
     color: white;
+    text-align: center;
 }
 .section-headline{
     color: #F28B0B;
@@ -68,6 +68,7 @@ p{
     font-size: 20px;
     color: white;
 }
+
 main{
     padding: 0px 50px;
 }
@@ -151,7 +152,8 @@ header{
 }
 .buttonh2{
     color: black;
-    margin: 0%;
+    margin-bottom: 20px;
+    font-weight: bolder;
 }
 .arrow{
     padding-top: 60px;
@@ -191,10 +193,12 @@ footer{
     background-color: #F28B0B;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-top: 20px;
 }
 
 .footer-link{
     font-size: 48px;
+    font-weight: bold;
     color: #310574;
     text-decoration: none;
 }
@@ -214,17 +218,24 @@ footer{
 }
 
 @media (max-width: 1200px){
+    nav{
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 0px;
+        
+    }
+   
     ul{
         gap: 30px;
+        padding-left: 20px;
     }
-    h1{
-        font-size: 40px;
-    }
+   
     h2{
-        font-size: 25px;
+        font-size: 35px;
     }
-    .section-headline{
-        font-size: 40px;
+    
+    .herotext{
+        display: none;
     }
     .herop{
         font-size: 12px;
@@ -249,6 +260,7 @@ footer{
     }
     .singel-p{
         width: 90%;
+        font-size: 25px;
     }
 
    
@@ -256,7 +268,7 @@ footer{
     /* rezising of images */
 
     .arrow{
-        width: 150px;
+        width: 100px;
     }
     .img-on-index{
         height: 300px;
@@ -266,14 +278,8 @@ footer{
 }
 
 @media (max-width: 1000px){
-    nav{
-        flex-direction: column;
-        padding-top: 10px;
-        padding-left: 0px;
-    }
     ul{
         gap: 20px;
-        padding-left: 20px;
     }
     
    .infotext-2{
@@ -285,13 +291,12 @@ footer{
    }
    .infop-2{
     max-width: 90%;
+    font-size: 25px;
    }
    .img-on-index{
     height: auto;
     width: 200px;
 }
-p{
-    font-size: 18px;
-}
+
 
 }
