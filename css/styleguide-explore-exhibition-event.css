@@ -1,4 +1,9 @@
 
+body {
+    margin: 0%;
+    background-color: #c93297;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .yellowbox{
     flex-direction: column;
     justify-content: center;
