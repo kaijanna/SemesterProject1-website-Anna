@@ -1,7 +1,7 @@
 
 body {
     margin: 0%;
-    background-color: #310574;
+    background-color: #23aa94;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,6 +39,13 @@ h1{
     font-size: 64px;
     color: white;
 }
+.section-headline{
+    color: #F28B0B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 h2{
     font-size: 48px;
@@ -63,6 +70,11 @@ p{
 }
 main{
     padding: 0px 50px;
+}
+.headline-box{
+    display: flex;
+    align-items: center;
+  
 }
 header{
     display: flex;
@@ -97,7 +109,7 @@ header{
     font-size: 64px;
 }
 
-.button-box{
+.button-box, .container-of-yellowbox {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -107,7 +119,7 @@ header{
     gap: 100px; 
 }
 
-.button{
+.button, .yellowbox{
     width: 35%;
     display: flex;
     flex-direction: row;
@@ -123,11 +135,19 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-.singel-button{
-    width: 100%;
+.button-singel{
     display: flex;
-    justify-content: center;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F28B0B;
+    padding: 50px 50px;
+    border-radius: 5px;
+    gap: 50px;
+    max-width: 80%; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .buttonh2{
     color: black;
@@ -193,7 +213,7 @@ footer{
     height: 200px;
 }
 
-@media (max-width:1200px){
+@media (max-width: 1200px){
     ul{
         gap: 30px;
     }
@@ -202,6 +222,9 @@ footer{
     }
     h2{
         font-size: 25px;
+    }
+    .section-headline{
+        font-size: 40px;
     }
     .herop{
         font-size: 12px;
@@ -224,6 +247,11 @@ footer{
         padding: 30px 30px;
         gap: 30px;
     }
+    .singel-p{
+        width: 90%;
+    }
+
+   
 
     /* rezising of images */
 
@@ -233,5 +261,37 @@ footer{
     .img-on-index{
         height: 300px;
     }
+
     
+}
+
+@media (max-width: 1000px){
+    nav{
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    ul{
+        gap: 20px;
+        padding-left: 20px;
+    }
+    
+   .infotext-2{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    gap: 50px;
+   }
+   .infop-2{
+    max-width: 90%;
+   }
+   .img-on-index{
+    height: auto;
+    width: 200px;
+}
+p{
+    font-size: 18px;
+}
+
 }
