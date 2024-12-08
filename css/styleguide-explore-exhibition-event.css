@@ -43,6 +43,13 @@
     align-items: center;
     gap: 50px;
 }
+.contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 .event{
     padding: 30px 30px;
         gap: 30px;
