@@ -11,6 +11,8 @@ nav {
     justify-content: flex-start;
     align-items: center;
     padding-left: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 ul {
