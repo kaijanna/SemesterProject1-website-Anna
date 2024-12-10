@@ -35,6 +35,12 @@ li {
     text-decoration: none;
     font-size: 30px;
 }
+.navlink:hover{
+    color: #310574;
+}
+.navlink:active{
+    color: #ffffff;
+}
 
 h1{
     font-size: 64px;
