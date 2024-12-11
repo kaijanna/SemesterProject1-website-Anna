@@ -10,7 +10,20 @@
 <body>
     <nav>
         <div><a href="index.html"> <img src="images/logo.png" alt="logo for the community sience museum a keyhole with atoms around" 
-            class="navlogo" style="width: auto; height: 100px;"></a> </div>
+            class="navlogo" ></a> </div>
+            <nav class="nav-mobil">
+                <input type="checkbox" id="check">
+                <label for="check" class="hamburger">
+                    <img src="images/hamburger-menu.png" alt="hamburger dropdown icon">
+                </label>
+                <div class="dropdown-menu">
+                    <a href="explore.html" class="navlink">Explore</a>
+                    <a href="exhibition.html" class="navlink">Exhibition</a>
+                    <a href="events.html" class="navlink">Events</a>
+                    <a href="visit-us.html" class="navlink">Visit us</a>
+                    <a href="get-involved.html" class="navlink">Get involved</a>
+                </div>
+            </nav>
         <ul>
             <li> <a href="explore.html" class="navlink">Explore</a> </li>
             <li> <a href="exhibition.html" class="navlink">Exhibition</a></li>
@@ -24,7 +37,7 @@
         <header>
             <h1>Visit us!</h1>
             <div class="hero">
-                <img src="images/museum.png" alt="2 kids playing in sand with dinosaur bones" style="width: 100%; height: auto;">
+                <img src="images/museum.png" alt="a cartoon illutration of the museum" class="museum">
             </div>
         </header>
 
@@ -36,12 +49,17 @@
             <p>Museum street 21</p>
             <p>Oslo, Norway</p>
           </div>
-          <div class="contact-box">
-            <h2>Contact:</h2>
-            <p>Phone: 123 45 678</p>
-            <p>Mail: csm@museum.com</p>
-            <p>Love to hear from you!</p>
-          </div>
+          <div class="form-container">
+            <h2>Contact form:</h2>
+            <form action="visit-us-page">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="your-email" placeholder="Your email..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <input type="reset" value="Submit">
+                
+            </form>
+        </div>
           
         </section>
         <div class="headline-box"><h1 class="section-headline">Admission</h1></div>
@@ -67,17 +85,18 @@
                    
             </div>
             <div class="yellowbox">
-                <h2 class="buttonh2">School holidays</h2>
+                <h2 class="buttonh2">Holidays</h2>
                 <p class="yellowbox-p">If you would like to organise a guided tour for your group of 6 or more people,
                     please contact us to arrange the tour.</p>
 
                 <p class="yellowbox-p">send us a message! </p>
                 <p class="yellowbox-p">museum@museum.com </p>
                 <div class="event-img">
-                    <img src="images/rock.png" alt="red brick house cartoon illutration" style="width: 100%; height: auto;">  
+                    <img src="images/rock.png" alt="cartoon illutration of a rock and glass display" class="rock">  
                 </div>
                 
             </div>
+           
         </div>
         <section class="infotext">
             <div class="event">
@@ -102,12 +121,12 @@
             </div>
           </section>
           <div class="image-over-section">
-            <img src="images/dino.png" alt="cartoon illutration of a boy-scientest" style="width: 100%; height: auto;">
+            <img src="images/dino.png" alt="cartoon illutration of a boy-scientest" class="dino">
         </div>
     </main>
     <footer>
         <div><a href="#top" class="footer-link">Go to top</a></div>
-        <a href="index.html"> <img src="images/logo.png" alt="logo for the community sience museum a keyhole with atoms around" class="navlogo" style="width: auto; height: 60px;"></a>
+        <a href="index.html"> <img src="images/logo.png" alt="logo for the community sience museum a keyhole with atoms around" class="navlogo" ></a>
         <h3>2024 - Community Science Museum</h3>
 
        </footer>

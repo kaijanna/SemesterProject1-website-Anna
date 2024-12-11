@@ -7,8 +7,21 @@ body {
     background-color: #310574;
 
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 
 }
+.nav-mobil{
+    display: none;
+    flex-direction: column;
+}
+.dropdown-menu{
+    display: none;
+    
+}
+#check:checked ~ .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+   }
  
 nav {
 
@@ -77,6 +90,10 @@ li {
     color: #ffffff;
 
 }
+
+input{
+    appearance: none;
+}
  
 h1{
 
@@ -88,19 +105,7 @@ h1{
 
 }
 
-.section-headline{
 
-    color: #F28B0B;
-
-    margin-top: 20px;
-
-    margin-bottom: 20px;
-
-    margin-left: auto;
-
-    margin-right: auto;
-
-}
  
 h2{
 
@@ -219,6 +224,7 @@ header{
     flex-direction: row;
 
     justify-content: center;
+    align-items: center;
 
     gap: 0px;
 
@@ -280,7 +286,7 @@ header{
 
     max-width: 80%; 
 
-    width: 100%;
+
 
     margin-left: auto;
 
@@ -369,6 +375,7 @@ footer{
     padding-bottom: 2%;
 
     margin-top: 20px;
+    gap: 10px;
 
 }
  
@@ -412,6 +419,10 @@ footer{
  
 @media (max-width: 1200px){
 
+    main{
+        padding: 0px 5px;
+    }
+
     nav{
 
         flex-direction: column;
@@ -421,19 +432,41 @@ footer{
         padding-left: 0px;
 
     }
+    .navlink{
+        font-size: 25px;
+    }
+    .nav-mobil{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .dropdown-menu{
+        display: none;
+        
+    }
+    #check:checked ~ .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+       }
 
     ul{
+        display: none;
 
-        gap: 30px;
-
-        padding-left: 20px;
-
+    }
+    h1{
+        font-size: 40px;
+        
     }
 
     h2{
 
-        font-size: 35px;
+        font-size: 30px;
+        text-align: left;
 
+    }
+    h3{
+        font-size: 15px;
     }
 
     .herotext{
@@ -452,35 +485,47 @@ footer{
 
     p{
 
-        font-size: 25px;
+        font-size: 20px;
+        text-align: left;
 
+    }
+    .infop{
+        max-width: 90%;
     }
 
     .infostartword{
 
-        font-size: 40px;
+        font-size: 35px;
 
     }
 
     .footer-link{
 
-        font-size: 40px;
+        font-size: 30px;
 
     }
  
     .button-box{
-
+        width: 100%;
         gap: 50px;
+        flex-direction: column;
 
     }
 
     .button{
-
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
         padding: 30px 30px;
 
-        gap: 30px;
+        gap: 0px;
 
     }
+    .button-singel{
+        flex-direction: column;
+        gap: 0px;
+    }
+   
 
     .singel-p{
 
@@ -493,9 +538,11 @@ footer{
    
  
     /* rezising of images */
+
+    
  
     .arrow{
-
+        padding-top: 0px;
         width: 100px;
 
     }
@@ -504,6 +551,9 @@ footer{
 
         height: 300px;
 
+    }
+    .img-alone{
+        height: 60px;
     }
  
     
@@ -518,6 +568,8 @@ footer{
 
     }
 
+
+ 
    .infotext-2{
 
     flex-direction: column;
@@ -528,7 +580,7 @@ footer{
 
     padding-bottom: 30px;
 
-    gap: 50px;
+    gap: 10px;
 
    }
 
@@ -536,7 +588,7 @@ footer{
 
     max-width: 90%;
 
-    font-size: 25px;
+    font-size: 20px;
 
    }
 
