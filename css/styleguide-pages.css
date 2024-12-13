@@ -1,4 +1,6 @@
 
+/* styles for the pages, and the images, so to not have inline styling on the img. I had read the to size img you can do that in the html file too, but i understand that inline 
+styling in html is not something you want us to learn and use, and i understand tris now*/
 
 .yellowbox{
     flex-direction: column;
@@ -127,7 +129,9 @@ input[type=text], textarea {
     color: white;
     font-weight: bold;
   }
-  /* images*/
+  /* images, and i see that i have not practis the dry method here, but the time i had to work out 
+  to fix my inline styling from the html, it was easyer for me to do it in a list like this, so i know that i have addes all the pictures.
+  this is a learning piont where i know what not to do next time, and remenber to sett up a stylesheet for just img to have better control.*/
 
   .logo {
     width: auto; 
