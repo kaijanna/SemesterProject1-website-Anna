@@ -1,98 +1,75 @@
 
 /* global styles for the site, and the index is styled from here*/
 
-/* i see that after the wonderful help, where i copied the code from you, to try out, when we made the test remember? it didtent change any thing
-so i forgot to go back to before the test, and now i see there is strange spacing between every line exsept where i worked after the help from you*/
+
 
 body {
-
     margin: 0%;
-
     background-color: #310574;
-
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-
 }
 .nav-mobil{
-    display: none;
+  /*  display: none;*/
     flex-direction: column;
+    align-items: center;
+}
+.hamburger{
+    display: none;
 }
 .dropdown-menu{
-    display: none;
-    
+   /* display: none;   */ 
+   display: flex;
+   gap: 100px;
+   padding-left: 100px;
 }
 #check:checked ~ .dropdown-menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* var colomme */
+    
    }
  
 nav {
-
     background-color: #F28B0B;
-
     display: flex;
-
     justify-content: flex-start;
-
     align-items: center;
-
     padding-left: 50px;
-
     padding-top: 1%;
-
     padding-bottom: 1%;
-
 }
  
 ul {
-
     padding: 0;
-
     display: flex;
-
     justify-content:end;
-
     list-style-type: none;
-
     gap: 100px;
-
     padding-left: 100px;
-
 }
  
 li {
-
     display: inline-block;
-
     height: 100%;
-
     padding: 10px;  
-
 }
 
 .navlink{
-
     font-weight: bolder;
-
     color: black;
-
     text-decoration: none;
-
     font-size: 30px;
-
 }
 
 .navlink:hover{
-
     color: #310574;
-
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
 .navlink:active{
 
     color: #ffffff;
-
 }
 
 input{
@@ -100,325 +77,193 @@ input{
 }
  
 h1{
-
     font-size: 64px;
-
     color: white;
-
     text-align: center;
-
 }
-
 
  
 h2{
-
     font-size: 48px;
-
     color:#F28B0B;
-
     font-weight: bold;
-
 }
  
 h3{
-
     color: black;
-
     font-weight: bold;
-
     text-align: center;
-
 }
  
 p{
-
     font-size: 40px;
-
     font-weight: bold;
-
     color: white;
-
 }
 
 .herop{
-
     font-size: 20px;
-
     color: white;
-
 }
  
 main{
-
     padding: 0px 50px;
-
 }
 
 .headline-box{
-
     display: flex;
-
     align-items: center;
-
 }
 
 header{
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
 }
  
 .hero{
-
     position: relative;
-
 }
 
 .herotext{
-
     position: absolute;
-
     top: 0px;
-
     left: 20px;
-
     max-width: 500px;
-
 }
  
 .infotext{
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     text-align: center;
-
     max-width: 100%;
-
 }
  
 .infop{
-
     max-width: 1200px;
-
 }
 
 .infostartword{
-
     color: #F28B0B;
-
     font-size: 64px;
-
 }
  
 .button-box, .container-of-yellowbox {
-
     display: flex;
-
     flex-direction: row;
-
     justify-content: center;
     align-items: center;
-
     gap: 0px;
-
     margin-left: auto;
-
     margin-right: auto;
-
     gap: 100px; 
-
 }
  
 .button, .yellowbox{
-
     width: 35%;
-
     display: flex;
-
     flex-direction: row;
-
     justify-content: space-between;
-
     background-color: #F28B0B;
-
     padding: 50px 50px;
-
     border-radius: 5px;
-
     gap: 50px;
-
     max-width: 80%;   
-
 }
 
 .singel{
-
     width: 100%;
-
     margin-left: auto;
-
     margin-right: auto;
-
 }
 
 .button-singel{
-
     display: flex;
-
     flex-direction: row;
-
     justify-content: space-between;
-
     background-color: #F28B0B;
-
     padding: 50px 50px;
-
     border-radius: 5px;
-
     gap: 50px;
-
     max-width: 80%; 
-
-
-
     margin-left: auto;
-
     margin-right: auto;
- 
 }
 
 .buttonh2{
-
     color: black;
-
     margin-bottom: 20px;
-
     font-weight: bolder;
-
 }
 
 .arrow{
-
     padding-top: 60px;
-
 }
  
 .infotext-2{
-
     display: flex;
-
     flex-direction: row;
-
     justify-content: center;
-
     gap: 100px;
-
     padding-top: 100px;
-
     padding-bottom: 100px;
-
 }
 
 .infop-2{
-
     max-width: 50%;
-
 }
 
 .singel-p{
-
     width: 80%;
-
     margin-left: auto;
-
     margin-right: auto;
-
     margin-top: 0px;
-
 }
  
 .img-alone{
-
     display: flex;
-
     padding-top: 5%;
-
     padding-bottom: 5%;
-
     margin-left: auto;
-
     margin-right: auto;
-
 }
  
 footer{
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     align-content: center;
-
     background-color: #F28B0B;
-
     padding-top: 2%;
-
     padding-bottom: 2%;
-
     margin-top: 20px;
     gap: 10px;
-
 }
  
 .footer-link{
-
     font-size: 48px;
-
     font-weight: bold;
-
     color: #310574;
-
     text-decoration: none;
-
 }
 
 /* images */
  
 .arrow{
-
     width: 200px;
-
     height: auto;
-
 }
 
 .img-on-index{
-
     width: auto; 
-
     height: 440px;
-
 }
 
 .img-alone{
-
     width: auto; 
-
     height: 200px;
-
 }
 
 .hero-background{
@@ -433,25 +278,23 @@ footer{
     }
 
     nav{
-
         flex-direction: column;
-
         padding-top: 10px;
-
         padding-left: 0px;
 
     }
     .navlink{
         font-size: 25px;
     }
+    .hamburger{
+        display: block;
+    }
     .nav-mobil{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
     .dropdown-menu{
-        display: none;
-        
+        display: none;   
     }
     #check:checked ~ .dropdown-menu {
         display: flex;
@@ -461,64 +304,49 @@ footer{
 
     ul{
         display: none;
-
     }
     h1{
-        font-size: 40px;
-        
+        font-size: 40px; 
     }
 
     h2{
-
         font-size: 30px;
         text-align: left;
-
     }
     h3{
         font-size: 15px;
     }
 
     .herotext{
-
         display: none;
-
     }
 
     .herop{
-
         font-size: 12px;
-
         max-width: 300px;
-
     }
 
     p{
-
         font-size: 20px;
         text-align: left;
-
     }
+
     .infop{
         max-width: 90%;
     }
 
     .infostartword{
-
         font-size: 35px;
-
     }
 
     .footer-link{
-
         font-size: 30px;
-
     }
  
     .button-box{
         width: 100%;
         gap: 50px;
         flex-direction: column;
-
     }
 
     .button{
@@ -526,9 +354,7 @@ footer{
         flex-direction: column;
         align-items: center;
         padding: 30px 30px;
-
         gap: 0px;
-
     }
     .button-singel{
         flex-direction: column;
@@ -537,78 +363,49 @@ footer{
    
 
     .singel-p{
-
         width: 90%;
-
         font-size: 25px;
-
     }
- 
-   
  
     /* rezising of images */
 
-    
- 
     .arrow{
         padding-top: 0px;
         width: 100px;
-
     }
 
     .img-on-index{
-
         height: 300px;
-
     }
     .img-alone{
         height: 60px;
     }
  
-    
-
 }
  
 @media (max-width: 1000px){
 
     ul{
-
         gap: 20px;
-
     }
-
-
  
    .infotext-2{
-
     flex-direction: column;
-
     align-items: center;
-
     padding-top: 20px;
-
     padding-bottom: 30px;
-
     gap: 10px;
-
    }
 
    .infop-2{
-
     max-width: 90%;
-
     font-size: 20px;
-
    }
 
    .img-on-index{
-
     height: auto;
-
     width: 200px;
-
 }
- 
  
 }
  
